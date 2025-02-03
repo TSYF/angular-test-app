@@ -4,7 +4,7 @@ WORKDIR /usr/share/nginx/html
 
 RUN rm -rf ./*
 
-COPY ./dist/doj-angular/browser /usr/share/nginx/html
+COPY ./dist/doj-angular /usr/share/nginx/html
 COPY ./docker/nginx.conf /etc/nginx/nginx.conf
 
 EXPOSE 80
